@@ -2,6 +2,7 @@
 brew install git
 read -p 'frequency in minutes (enter 0 to cancel and delete backups): ' freq
 PWD2=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+echo working in $PWD2
 dir=$PWD2/.git_backup_scripts
 mkdir -p "$dir"
 FILE=$dir/backup.sh
